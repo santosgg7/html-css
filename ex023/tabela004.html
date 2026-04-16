@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
 </head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+border-collapse: collapse;
+    }
+    caption{
+        font-size: 1.3em;
+        font-weight: bold;
+        padding: 10px;
+    }
+    th,td{
+border: 1px solid black;
+padding: 10px;
+    }
+</style>
 <body>
  <h1>Exercicio de Tabela</h1>
  <table>
      <caption>
-
+Filmes Favoritos
      </caption> 
      <thead>
 <tr>
@@ -19,13 +36,51 @@ Grupos
     <th>
 Nomes
     </th>
-    <th>
+    <th colspan="4" scope="colgroup">
 Filmes
     </th>
 </tr>
      </thead>  
-     <tbody>
+     <tbody><tr>
+         
+         <th rowspan="3" scope="row">Mulheres</th>
+         <td>Ana Maria Santos</td>
+         <td> Alien</td>
+         <td> Rambo</td>
+         <td> Vingadores</td>
+     </tr>
+<tr>
+    <td>beatriz</td>
+    <td>Hulk</td>
+    <td>Inception</td>
+    <td>Batman</td>
+    <tr>
+        <td>Cláudia Melo</td>
+        <td>Oblivion</td>
+        <td>Matrix</td>
+        <td>Big Hero</td>
+    </tr>
+</tr>
+<tr>
+<th rowspan="3" scope="row">Homens</th>
+<td>Bruno Mendonça</td>
+<td>Intocáveis</td>
+<td>Amnésia</td>
+<td>Gladiador</td>
+</tr>
 
+<tr>
+<td>Daniel lourençco</td>
+<td>Wall-E</td>
+<td>Oldboy</td>
+<td>Dangal</td>
+</tr>
+<tr>
+    <td>Fabiano Mota</td>
+<td> Star Wars</td>
+<td>Taxi Driver</td>
+<td> Toy Story</td>
+</tr>
      </tbody>
  </table>
 </body>
