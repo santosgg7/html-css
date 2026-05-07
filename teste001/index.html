@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <style>
+        html,body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+        header{
+            background-color: gray;
+        }
+        header h1{
+            text-align: center;
+        }
+        menu{
+display: none;
+        }
+        menu > ul {
+
+            list-style-type: none;
+        }
+        menu > ul > li > a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            border-top: 2px solid rgb(163, 163, 163);
+        }
+        span#burger{
+            background-color: rgb(77, 77, 77);
+            text-align: center;
+          display: block;
+          color: white;
+          cursor:pointer ;
+        }
+    </style>
+    <title>TESTE</title>
+</head>
+<body>
+    <header>
+        <h1>
+meu site
+        </h1>
+     <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
+menu
+</span>
+
+</span>
+        <menu id="itens">
+<ul>
+    <li><a href="#">OPÇÃO 1</a></li>
+</ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+        <h2>
+texto
+        </h2>
+        <p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus vero mollitia ipsum assumenda corporis, illum quis eum quisquam doloremque commodi asperiores libero deleniti, quo officiis nobis voluptates quas qui deserunt?
+        </p>
+    </article>
+</main>
+<script>
+    function clickMenu(){
+        if(itens.style.display == 'block'){
+            itens.style.display = 'none'
+        }
+        else(
+      itens.style.display ='block')
+    }
+</script>
+</body>
+</html>
